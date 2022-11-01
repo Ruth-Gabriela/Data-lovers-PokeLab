@@ -113,7 +113,7 @@ filterXRegion.addEventListener("change", () => {
         showPokemons(copyDataPokemon);
         subTitlePokemonsLength.innerText = `(${copyDataPokemon.length} results)`
       }else{
-        alert ("No pokemon from Kanto");
+        alert (`To filter Kanto, refresh the search engine by selecting "All Generations".`);
       }
       break;
     case "johto":
@@ -123,7 +123,7 @@ filterXRegion.addEventListener("change", () => {
         showPokemons(copyDataPokemon);
         subTitlePokemonsLength.innerText = `(${copyDataPokemon.length} results)`
       }else{
-        alert ("No pokemon from Johto");
+        alert (`To filter Jhoto, refresh the search engine by selecting "All Generations".`);
       }
       break;
   }
