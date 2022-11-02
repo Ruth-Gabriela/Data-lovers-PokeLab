@@ -105,6 +105,7 @@ filterXRegion.addEventListener("change", () => {
       showPokemons(data.pokemon);
       cleanClass(allCardTypes);
       subTitlePokemonsLength.innerText = `(${copyDataPokemon.length} results)`
+      searchInputName.value = "";//para limpíar el input del buscador.
       break;
     case "kanto":
       variableExtraKanto = filterByRegion(filterXRegion.value, copyDataPokemon);
@@ -141,6 +142,7 @@ sortSelect.addEventListener("change", () => {
       showPokemons(data.pokemon);
       cleanClass(allCardTypes);
       subTitlePokemonsLength.innerText = `(${copyDataPokemon.length} results)`
+      searchInputName.value = ""; //para limpíar el input del buscador.
       break;
     case "a-z":
       showPokemons(sortPokemons(copyDataPokemon));
